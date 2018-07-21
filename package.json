@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:server": "node server.js"
+    "start": "node server.js",
+    "parcel:dev": "./node_modules/.bin/parcel index.html",
+    "parcel:watch": "./node_modules/.bin/parcel watch index.html",
+    "parcel:build": "./node_modules/.bin/parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -19,6 +22,7 @@
   "homepage": "https://github.com/THEozmic/getting-started-parcel#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "parcel-bundler": "^1.9.7",
     "path": "^0.12.7",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
